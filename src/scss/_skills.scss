@@ -1,0 +1,23 @@
+.skills {
+    height: 100em;
+    &__title {
+        font-size: 5em;
+        
+        color: $color_green;
+        text-align: center;
+    }
+    .skill h2 {
+        border: 3px solid red;
+        width: 9em;
+        height: 2.2em;
+        font-size: 2em;
+        background-color: $color_bg;
+        color: $color_white;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 0.5em;
+        letter-spacing: 0.1em;
+    }
+    
+}
+

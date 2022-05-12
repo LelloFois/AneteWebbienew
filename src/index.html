@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="/anetawebbie/dist/css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;400;700;900&display=swap" rel="stylesheet">
     <link rel="icon" href="img/logo.svg">
+    
     <title>Aneta Webbie</title>
 </head>
 <body class="container">
     <header>
-        <span class="nav__image"><img src="img/logo.svg" alt="logo"></span>
+       
+            <div class="image image__logo"><img src="img/logo.svg" alt="logo"></div>
+            
+            
         <nav class="nav">
             
             <div class="nav__links">
@@ -30,7 +34,7 @@
       <div class="header">
              
             <div class="header__text">
-                <h1>Hi, I am <span class="name">Aneta Webbie</span></h1>
+                <h1>Hi, I am <div class="name">Aneta Webbie</div></h1>
                 <h2>I'm a Full-stack Web Developer.</h2>
             </div>
       </div>
@@ -41,62 +45,71 @@
             <p>Let's work together to make <strong>your product stand out</strong>. I create beautiful and functional websites. I work<strong> with my clients step by step from the idea stage until the fully functioning web application</strong>.</p><br>
 
             <div class="bubbles">
-                <span class="bubble"></span>
-                <span class="bubble"></span>
-                <span class="bubble"></span>
-                <span class="bubble"></span>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
             </div>
             
         </div>
         
         <section class="description">
-            <h2>Discover</h2>
-            <p>Telll me about your project and we brainstorm together the features to create a plan for your product to launch.</p>
-            <h2>Design</h2>
-            <p>We design the wireframe and agree together how to create the best experience for your users to present your brand.</p>
-            <h2>Deploy</h2>
-            <p>We prototype and develop your rpoduct together intensivelyto incorporate your feedback.</p>
-            <h2>Be Ready</h2>
-            <p>We deploy your product and now your website is ready to get the traction.
-                Get out tehre and grow your audience.
-            </p>
+            <div class="description__direction description__direction1">
+                <h2>Discover</h2>
+                <p>Tell me about your project and we brainstorm together the features to create a plan for your product to launch.</p>
+            </div>
+            <div class="description__direction description__direction2">
+                <h2>Design</h2>
+                <p>We design the wireframe and agree together how to create the best experience for your users to present your brand.</p>
+            </div>
+            <div class="description__direction description__direction3">
+                <h2>Deploy</h2>
+                <p>We prototype and develop your rpoduct together intensivelyto incorporate your feedback.</p>
+            </div>
+            <div class="description__direction description__direction4">
+                <h2>Be Ready</h2>
+                <p>We deploy your product and now your website is ready to get the traction.
+                    Get out tehre and grow your audience.
+                </p>
+            </div>
 
         </section>
 
         <section class="skills">
-            <span class="skill-html"><h2>HTML</h2><p>80%</p></span>
-            <span class="skill-css"><h2>CSS, Sass</h2><p>80%</p></span>
-            <span class="skill-js"><h2>Javascript</h2><p>70%</p></span>
-            <span class="skill-react"><h2>React</h2><p>60%</p></span>
-            <span class="skill-jquery"><h2>jQuery</h2><p>70%</p></span>
-            <span class="skill-php"><h2>PHP</h2><p>60%</p></span>
-            <span class="skill-laravel"><h2>HTML</h2><p>60%</p></span>
-            <span class="skill-ux"><h2>UX</h2><p>50%</p></span>
+            <h2 class="skills__title">MY SKILLS</h2>
+            <div class="skill skill-html"><h2>HTML</h2><p>80%</p></div>
+            <div class="skill skill-css"><h2>CSS, Sass</h2><p>80%</p></div>
+            <div class="skill skill-js"><h2>Javascript</h2><p>70%</p></div>
+            <div class="skill skill-react"><h2>React</h2><p>60%</p></div>
+            <div class="skill skill-jquery"><h2>jQuery</h2><p>70%</p></div>
+            <div class="skill skill-php"><h2>PHP</h2><p>60%</p></div>
+            <div class="skill skill-laravel"><h2>HTML</h2><p>60%</p></div>
+            <div class="skill skill-ux"><h2>UX</h2><p>50%</p></div>
         </section>
 
         <section class="portfolio">
             <h2>MY PORTFOLIO</h2>
-            <span><img src="img/camera logo.svg" alt="picture logo"><a href="#">Website for a coffee shop.</a><a href="#">Student project for the Coding Bootcamp Praha.</a><a href="#">Coded based on provided psd design.</a><br>
-            <strong>Tech stack: HTML, CSS, Bootstrap</strong></span>
-            <span><img src="img/camera logo.svg" alt="picture logo"><a href="#">Description of hackathon project #2</a>
+            <div><img src="img/camera logo.svg" alt="picture logo"><a href="#">Website for a coffee shop.</a><a href="#">Student project for the Coding Bootcamp Praha.</a><a href="#">Coded based on provided psd design.</a><br>
+            <strong>Tech stack: HTML, CSS, Bootstrap</strong></div>
+            <div><img src="img/camera logo.svg" alt="picture logo"><a href="#">Description of hackathon project #2</a>
                 <a href="#">Description of hackathon project #2</a><a href="#">Description of hackathon project #2</a>
-            <strong>Tech stack:</strong></span>
-            <span><img src="img/camera logo.svg" alt="picture logo"><a href="#">Description of hackathon project #3</a>
+            <strong>Tech stack:</strong></div>
+            <div><img src="img/camera logo.svg" alt="picture logo"><a href="#">Description of hackathon project #3</a>
                 <a href="#">Description of hackathon project #3</a><a href="#">Description of hackathon project #3</a>
-            <strong>Tech stack:</strong></span>
-            <span><img src="img/camera logo.svg" alt="picture logo"><a href="#">Description of hackathon project #4</a>
+            <strong>Tech stack:</strong></div>
+            <div><img src="img/camera logo.svg" alt="picture logo"><a href="#">Description of hackathon project #4</a>
                 <a href="#">Description of hackathon project #4</a><a href="#">Description of hackathon project #4</a>
-            <strong>Tech stack:</strong></span>
-            <span><img src="img/camera logo.svg" alt="picture logo"><a href="#">Description of hackathon project #5</a>
+            <strong>Tech stack:</strong></div>
+            <div><img src="img/camera logo.svg" alt="picture logo"><a href="#">Description of hackathon project #5</a>
                 <a href="#">Description of hackathon project #5</a><a href="#">Description of hackathon project #5</a>
-            <strong>Tech stack:</strong></span>
-            <span><img src="img/camera logo.svg" alt="picture logo"><a href="#">Description of your Final Project.</a>
+            <strong>Tech stack:</strong></div>
+            <div><img src="img/camera logo.svg" alt="picture logo"><a href="#">Description of your Final Project.</a>
                 <a href="#">Description of your Final Project, including the tech stack.</a>
-            <button onclick="#">Explore</button></span>
+            <button onclick="#">Explore</button></div>
         </section>
 
         <section class="about-me">
-            <p><strong>My name is Aneta Webbie</strong>. Lorem ipsum dolor sit, amet consectetur adipisicing elit. <strong>Voluptatem</strong>, perspiciatis provident minima sapiente placeat temporibus beatae id dolores esse pariatur, <span class="about-me__emphasize">veritatis ut quod iste, enim est.</span> Cum earum reiciendis ut?
+            <p><strong>My name is Aneta Webbie</strong>. Lorem ipsum dolor sit, amet consectetur adipisicing elit. <strong>Voluptatem</strong>, perspiciatis provident minima sapiente placeat temporibus beatae id dolores esse pariatur, <div class="about-me__emphasize">veritatis ut quod iste, enim est.</div> Cum earum reiciendis ut?
                 <strong>Get in touch let's do something great together</strong>
             </p>
             <button onclick="#">Contact me</button>
@@ -121,7 +134,7 @@
                 <input type="email" id="email" name="email"><br><br>
                 <label for="phone">Phone</label>
                 <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
-                <span class="message">My message*</span><br>
+                <div class="message">My message*</div><br>
                 <textarea name="comment" id="comment" cols="30" rows="10"></textarea><br>
                 <input type="submit" value="Submit">
                 
@@ -135,13 +148,13 @@
 
     <footer>
         <section class="footer__socialmedia">
-            <span class="footer__text"><h2>NICE TO MEET YOU</h2></span>
+            <div class="footer__text"><h2>NICE TO MEET YOU</h2></div>
             <div class="footer__socialmedia-box">
                 <img src="img/GitHub-Logo.wine.svg" alt="GitHub logo">
             <img src="img/LinkedIn-Icon-Black-Logo.wine.svg" alt="Linked in logo">
             <img src="img/Instagram-Glyph-Black-Logo.wine.svg" alt="Instagram logo">
             </div>
-            <span class="copyright">&copy; Aneta Webbie 2018</span>
+            <div class="copyright">&copy; Aneta Webbie 2018</div>
         </section>
     </footer>
 

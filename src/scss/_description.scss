@@ -1,0 +1,28 @@
+.description {
+    width: 100%;
+    background-color: $color_bg;
+    
+    height: 25em;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    h2 {
+        font-size: 2em;
+        color: $color_green;
+    }
+
+    p{
+        font-size: 1.5em;
+        color: $color_white;
+    }
+    &__direction{
+        text-align: center;
+        width: 15em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 4em 2em;
+    }
+}

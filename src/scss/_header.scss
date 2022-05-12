@@ -1,57 +1,82 @@
 
+
+
+
+
+
 .nav {  
     margin-top: -3.5rem; 
-    background-color: #232323;
+    background-color: $color_bg;
     width: auto;
-    height: 6em;
+    height: 3em;
     margin-left: 13rem;
-}
-
-.nav__image {
-    float: ce
-}
-
-.nav__links {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 1em;
     
+   &__links {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 1em;
+    
+         a {
+            color: $color_white;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-decoration: none;
+            transition: all ease-in-out 250ms;
+        
+            &:hover {
+                color: $color_hover;
+                
+
+                &::before{
+                    content:'';
+                    display: block;
+                    height: 3px;
+                    width: 100%;
+                    background-color: $color_hover;
+                    position: relative;
+                    bottom: 0.3em;
+                    
+                }
+            }
+          
+        }
+    }
 }
 
-.nav__links a {
-    color: #fff;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-decoration: none;
-}
 
-.nav__links a:hover {
-    color: orange;
-}
+
+
+
+
+
 
 .header {
     margin-top: 5rem;
+
+    &__text {
+        width: 100%;
+        height: 650px;
+        color: #fff;
+        
+        background-image: url('/anetawebbie/src/img/leaf-5298312_1280.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 20% 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-size: 4em;
+        }
+
+        h2 {
+            font-size: 2.6em;
+        }
+    }
 }
 
-.header__text {
-    width: 100%;
-    height: 650px;
-    color: #fff;
-    
-    background-image: url('/anetawebbie/src/img/leaf-5298312_1280.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 20% 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
-.header__text h1 {
-    font-size: 4em;
-}
 
-.header__text h2 {
-    font-size: 2.6em;
-}
+
+
