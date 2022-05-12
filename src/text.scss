@@ -1,0 +1,32 @@
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 5rem;
+    padding-left: 6em;
+    padding-right: 6em;
+}
+
+.name {
+    color: #54be90;
+    border-bottom: 5px solid #fff;
+}
+
+.bubbles {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.bubble {
+    
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+}
