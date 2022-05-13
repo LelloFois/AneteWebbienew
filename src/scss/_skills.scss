@@ -1,23 +1,105 @@
+@mixin skill-bar($current-width, $remain_width) {
+    display: flex;
+    margin: 5px;
+    width: 100%;
+    justify-content: flex-start;
+
+    .skill__bar__tag {
+
+        background-color: $color_text;
+        width: 9rem;
+        color: $color_white;
+        font-weight: 300;
+        margin: 0;
+        text-align: center;
+        padding: .8rem;
+    }
+
+    .skill__bar__container {
+
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: flex-start;
+
+        &__progress {
+            background-color: $color_green;
+            width: $current-width;
+        }
+
+        &__percentage {
+            background-color: lightgrey;
+            color: $color_text;
+            width: $remain_width;
+            margin: 0;
+            text-align: right;
+            padding: 1rem;
+        }
+    }
+
+
+}
+
+
 .skills {
-    height: 100em;
+
     &__title {
         font-size: 5em;
-        
         color: $color_green;
         text-align: center;
     }
-    .skill h2 {
-        border: 3px solid red;
-        width: 9em;
-        height: 2.2em;
-        font-size: 2em;
-        background-color: $color_bg;
-        color: $color_white;
-        font-weight: 400;
-        text-align: center;
-        padding-top: 0.5em;
-        letter-spacing: 0.1em;
-    }
-    
-}
 
+    .skill__bars {
+
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 70%;
+
+        .skill__bar_html {
+
+            @include skill-bar(80%, 20%);
+        }
+
+        .skill__bar_css {
+
+            @include skill-bar(80%, 20%);
+        }
+
+        .skill__bar_js {
+
+            @include skill-bar(70%, 30%);
+        }
+
+
+        .skill__bar_react {
+
+            @include skill-bar(60%, 40%);
+        }
+
+        .skill__bar_jquery {
+
+            @include skill-bar(70%, 30%);
+        }
+
+        .skill__bar_php {
+
+            @include skill-bar(60%, 40%);
+        }
+
+        .skill__bar_laravel {
+
+            @include skill-bar(60%, 40%);
+        }
+
+
+        .skill__bar_ux {
+
+            @include skill-bar(50%, 50%);
+        }
+
+    }
+
+
+
+}
